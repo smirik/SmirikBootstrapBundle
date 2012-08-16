@@ -13,13 +13,13 @@
         }
     ],
     "require": {
-        "symfony/framework-bundle": "2.*",
+        "symfony/framework-bundle": "2.*"
     },
     "suggest": {
         "symfony/twig-bundle": "2.*"
     },
     "autoload": {
-        "psr-0": { "Smirik\\BoostrapBundle": "" }
+        "psr-0": { "Smirik\\BootstrapBundle": "" }
     },
-    "target-dir": "smirik/bootstrap-bundle"
+    "target-dir": "Smirik/BootstrapBundle"
 }
