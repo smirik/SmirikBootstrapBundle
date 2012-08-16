@@ -1,0 +1,28 @@
+{% block field_row %}
+  <div class="control-group">
+    <div class="form_error">
+    	{{ form_errors(form) }}
+    </div>
+      {{ form_label(form) }}
+    <div class="controls">
+      {{ form_widget(form) }}
+    </div>
+  </div>
+{% endblock field_row %}
+
+{% block form_label %}
+{% spaceless %}
+    {% if not compound %}
+        {% set label_attr = label_attr|merge({'for': id}) %}
+    {% endif %}
+    {% if required %}
+        {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' required control-label')|trim}) %}
+    {% else %}
+      {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' control-label')|trim}) %}
+    {% endif %}
+    {% if label is empty %}
+        {% set label = name|humanize %}
+    {% endif %}
+    <label{% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>{{ label|trans({}, translation_domain) }}</label>
+{% endspaceless %}
+{% endblock form_label %}

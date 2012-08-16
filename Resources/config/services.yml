@@ -1,0 +1,6 @@
+services:
+  smirik.twig.bootstrap_extension:
+    class: Smirik\BootstrapBundle\Twig\BootstrapExtension
+    arguments: [ "@service_container" ]
+    tags:
+    - { name: twig.extension }

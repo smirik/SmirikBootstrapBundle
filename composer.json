@@ -1,0 +1,25 @@
+{
+    "name": "smirik/boostrap-bundle",
+    "description": "Simple bundle which add bootstrap css and js files to project and standard template to the form.",
+    "keywords": ["bootstrap", "css"],
+    "homepage": "https://github.com/smirik/SmirikBootstrapBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evgeny Smirnov",
+            "email": "smirik@gmail.com",
+            "homepage": "http://4xxi.com"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "2.*",
+    },
+    "suggest": {
+        "symfony/twig-bundle": "2.*"
+    },
+    "autoload": {
+        "psr-0": { "Smirik\\BoostrapBundle": "" }
+    },
+    "target-dir": "smirik/bootstrap-bundle"
+}
