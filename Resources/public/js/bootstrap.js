@@ -952,6 +952,8 @@
 
       e.preventDefault()
 
+      if($this.hasClass('disabled')) return;
+      
       $target
         .modal(option)
         .one('hide', function () {
