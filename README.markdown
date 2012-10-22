@@ -30,6 +30,12 @@ Add bundle to your composer.json:
 }
 ```
 
+Add to your AppKernel.php:
+```php
+    new Smirik\BootstrapBundle\SmirikBootstrapBundle(),
+```
+
+
 How to use
 ----------
 
