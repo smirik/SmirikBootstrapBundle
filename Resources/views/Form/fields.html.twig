@@ -1,4 +1,4 @@
-{% block field_row %}
+{% block form_row %}
   <div class="control-group">
     <div class="form_error">
     	{{ form_errors(form) }}
@@ -8,7 +8,7 @@
       {{ form_widget(form) }}
     </div>
   </div>
-{% endblock field_row %}
+{% endblock form_row %}
 
 {% block form_label %}
 {% spaceless %}
